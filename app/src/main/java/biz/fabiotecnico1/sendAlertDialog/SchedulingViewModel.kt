@@ -45,19 +45,19 @@ class SchedulingViewModel : ViewModel() {
     var observationTemp by mutableStateOf("")
         private set
 
-    fun updateNameTemp(nome: String) {
-        nameTemp = nome
+    fun updateNameTemp(name: String) {
+        nameTemp = name
     }
 
-    fun updateConfirmedTemp(confirmado: Boolean) {
-        isConfirmedTemp = confirmado
+    fun updateConfirmedTemp(confirmed: Boolean) {
+        isConfirmedTemp = confirmed
     }
 
-    fun updateObservationTemp(observacao: String) {
-        observationTemp = observacao
+    fun updateObservationTemp(observation: String) {
+        observationTemp = observation
     }
 
-    fun updateConfirmedDialog(show: Boolean) {
+    fun updateConfirmationDialog(show: Boolean) {
         _uiState.value = _uiState.value.copy(showConfirmationDialog = show)
     }
 
